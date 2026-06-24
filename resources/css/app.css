@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* Kaji Indonesia Style Guide */
+    --color-primary: #2D7D46;
+    --color-primary-dark: #236335;
+    --color-primary-light: #3d9e5a;
+    --color-secondary: #F5A623;
+    --color-secondary-dark: #d98f1a;
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+    --radius-xl: 0.75rem;
+    --shadow-card: 0 10px 40px -10px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+}
