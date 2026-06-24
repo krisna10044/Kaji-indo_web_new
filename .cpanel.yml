@@ -2,8 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/infojawatimur/kajiindonesia.com_new/
-    - /bin/cp -R $CPCWD/* $DEPLOYPATH
-    - /bin/cp -R $CPCWD/.* $DEPLOYPATH
-    - cd $DEPLOYPATH && php artisan config:cache
-    - cd $DEPLOYPATH && php artisan route:cache
-    - cd $DEPLOYPATH && php artisan view:cache
+    - /bin/rsync -av --exclude='.git' --exclude='.cpanel.yml' --exclude='vendor' $CPCWD/ $DEPLOYPATH
